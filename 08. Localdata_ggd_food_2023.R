@@ -19,7 +19,6 @@ foodshop$close_date <- as.integer(foodshop$close_date)
 str(foodshop)
 
 foodshop<-foodshop%>%filter(open_date!= '') %>%select(name,type,status,open_date,close_date,address)
-str(foodshop)
 table(foodshop$status)
 
 range(foodshop$open_date, na.rm = T)
